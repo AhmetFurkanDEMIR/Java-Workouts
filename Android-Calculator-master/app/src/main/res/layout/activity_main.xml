@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="119dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="56dp"
+        android:text="sonuç = 0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.602"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buton3" />
+
+    <EditText
+        android:id="@+id/islem1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:ems="10"
+        android:hint="1. sayıyı girin"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/islem2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:hint="2. sayıyı girin"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/islem1"
+        app:layout_constraintTop_toBottomOf="@+id/islem1" />
+
+    <Button
+        android:id="@+id/buton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:onClick="Toplama"
+        android:text="+"
+        app:layout_constraintStart_toStartOf="@+id/islem2"
+        app:layout_constraintTop_toBottomOf="@+id/islem2" />
+
+    <Button
+        android:id="@+id/buton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:onClick="Cikarma"
+        android:text="-"
+        app:layout_constraintStart_toEndOf="@+id/buton1"
+        app:layout_constraintTop_toTopOf="@+id/buton1" />
+
+    <Button
+        android:id="@+id/buton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:onClick="Carpma"
+        android:text="*"
+        app:layout_constraintStart_toStartOf="@+id/buton1"
+        app:layout_constraintTop_toBottomOf="@+id/buton1" />
+
+    <Button
+        android:id="@+id/buton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:onClick="Bolme"
+        android:text="/"
+        app:layout_constraintStart_toStartOf="@+id/buton2"
+        app:layout_constraintTop_toBottomOf="@+id/buton2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
